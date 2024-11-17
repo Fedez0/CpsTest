@@ -38,10 +38,10 @@ def buttonClicked():
 def setLayout(frame):
     global labelClicks, labelTime
     label = gui.Text(frame, text="CPS Test", size=40, font="Arial", color="black")
-    image = gui.Picture(frame, image="cps.png")
+    image = gui.Picture(frame, image="./img/cps.png")
     labelClicks = gui.Text(frame, text=f"Clicks: {clicks}", size=20, font="Arial", color="black")
     button = gui.PushButton(frame, text="Click here", command=buttonClicked,width=20, height=5)
-    
+    frame.icon = "./img/cps.ico"
     labelTime = gui.Text(frame, text=f"Time: {time}", size=20, font="Arial", color="black")
     
     pass
