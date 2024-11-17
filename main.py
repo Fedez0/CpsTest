@@ -10,7 +10,7 @@ labelClicks = None
 labelTime = None
 temp = True
 def start_timer():
-    global labelTime,temp,time
+    global labelTime,temp,clicks
     start_time = tn.time()
     while temp:
         elapsed_time = tn.time() - start_time
@@ -19,7 +19,7 @@ def start_timer():
         if elapsed_time >= 10:
             break
     show_popup()
-    time = 0
+    clicks = 0
         
 def show_popup():
     global clicks
